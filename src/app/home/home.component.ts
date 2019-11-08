@@ -1,6 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { PIZZAS } from '../pizzasList';
-import { BasketService } from '../basket.service';
+import {Component, OnInit} from '@angular/core';
+import {PIZZAS} from '../pizzasList';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +10,7 @@ export class HomeComponent implements OnInit {
   counter = 0;
   constructor() { }
   pizzas = PIZZAS;
+  totalPrice: any;
 
   ngOnInit() { }
 

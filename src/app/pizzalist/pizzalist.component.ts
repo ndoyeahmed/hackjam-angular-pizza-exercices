@@ -1,13 +1,5 @@
-import {
-  Component,
-  OnInit,
-  Input,
-  Output,
-  EventEmitter,
-  HostListener
-} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {PIZZAS} from '../pizzasList';
-import {BasketComponent} from '../basket/basket.component';
 import {BasketService} from '../basket.service';
 import {Pizza} from '../pizza';
 
@@ -37,11 +29,17 @@ export class PizzalistComponent implements OnInit {
     // Decrement the number of the ordered pizza
     // the total amount of the selected pizza should be reduced as well
     // call the update list
+    pizza.numberOrdered--;
+    pizza.totalAmountProduct = pizza.numberOrdered * pizza.price;
+    this.updateList(pizza, false);
   }
 
   incrementNumber(pizza: Pizza) {
     // Increment the number of the ordered pizza
     // the total amount of the selected pizza should be augmented as well
     // call the update list
+    pizza.numberOrdered++;
+    pizza.totalAmountProduct = pizza.numberOrdered * pizza.price;
+    this.updateList(pizza, true);
   }
 }

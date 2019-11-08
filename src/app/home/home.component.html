@@ -1,11 +1,11 @@
 <div class="home-header">
   <h3>Pizza ordered : {{ counter }}</h3>
   <div class="buttons">
-    <button class="resetBtn" (Onclick)="resetAll()">Reset</button>
-    <button class="buyBtn" (Onclick)="buyNow()">Buy Now</button>
+    <button (click)="resetAll()" class="resetBtn">Reset</button>
+    <button (click)="buyNow()" class="buyBtn">Buy Now</button>
   </div>
 </div>
-<app-pizzalist (isAdded)="updateList()"></app-pizzalist>
+<app-pizzalist (isAdded)="updateList($event)"></app-pizzalist>
 
 
 <ng-template #testModal let-modal>

@@ -1,10 +1,10 @@
 <div class="pizzaDetailsMain">
   <div class="pizzaInfos" *ngFor="let pizza of pizzas">
     <div class="order">
-      <button class="btnPizza" type="button" (disabled)="(pizza.numberOrdered <= 0)" click="decrementNumber(pizza)">
+      <button (click)="decrementNumber(pizza)" [disabled]="(pizza.numberOrdered <= 0)" class="btnPizza" type="button">
         -
       </button>
-      <button class="btnPizza" type="button" (disabled)="(pizza.numberOrdered >= 7)" click="incrementNumber(pizza)">
+      <button (click)="incrementNumber(pizza)" [disabled]="(pizza.numberOrdered >= 7)" class="btnPizza" type="button">
         +
       </button>
     </div>

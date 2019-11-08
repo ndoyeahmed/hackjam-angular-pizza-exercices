@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { BasketService } from '../basket.service';
+import {Component, OnInit} from '@angular/core';
+import {BasketService} from '../basket.service';
 
 @Component({
   selector: 'app-basket',
@@ -10,6 +10,10 @@ export class BasketComponent implements OnInit {
   constructor(private basketService: BasketService) {}
   amount = 0;
   ngOnInit() {
+    this.basketService.getEmit().subscribe(data => {
+      console.log(data);
+      this.amount = data;
+    });
     // With the subscribe, you can catch
     // the value of the variable emitted in the service
     /* Here you should subscribe to the update emitter to catch
