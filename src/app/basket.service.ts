@@ -6,7 +6,7 @@ import {EventEmitter, Injectable, Output} from '@angular/core';
 export class BasketService {
   constructor() {}
 
-  totalAmount = 100;
+  totalAmount = 0;
   @Output() update: EventEmitter<number> = new EventEmitter();
 
   addToTotalAmount(currentProduct: number, isIncrementing: boolean) {

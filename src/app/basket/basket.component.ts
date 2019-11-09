@@ -11,7 +11,6 @@ export class BasketComponent implements OnInit {
   amount = 0;
   ngOnInit() {
     this.basketService.getEmit().subscribe(data => {
-      console.log(data);
       this.amount = data;
     });
     // With the subscribe, you can catch

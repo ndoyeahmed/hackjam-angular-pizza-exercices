@@ -15,7 +15,6 @@ export class PizzalistComponent implements OnInit {
   // @Input() name: string;
   @Output() isAdded = new EventEmitter<boolean>();
   pizzas = PIZZAS;
-  pizzaList: Pizza[] = [];
 
   ngOnInit() {
   }
