@@ -38,10 +38,10 @@ This application is broken. Your goal is to repair it.
 
 Here we have four main components. The basket, header, home and pizzalist.
 
-- The basket component only handles the final amount of money you'll have to pay after choosing your pizzas.
-- The header component, as you can see in its html file, contains the basket. You don't have to do anything with it.
-- The home component is the one which will contain the functions of the button to reset, to buy.
-- Finally, the pizzalist component where you'll write the function to select the number of pizza of each kind you want.
+-  The basket component only handles the final amount of money you'll have to pay after choosing your pizzas.
+-  The header component, as you can see in its html file, contains the basket. You don't have to do anything with it.
+-  The home component is the one which will contain the functions of the button to reset, to buy.
+-  Finally, the pizzalist component where you'll write the function to select the number of pizza of each kind you want.
 
 First, you should check the app.module.ts file. Some things are missing.
 
@@ -62,10 +62,10 @@ L'application est cassée et votre objectif est de la réparer.
 
 Il y a quatre principaux composants : "Basket", "header", "home" et "pizzalist"
 
-- Le composant basket ne s'occupe que de la somme total à payer après avoir choisi vos pizzas.
-- Le composant header, comme vous pouvez le voir dans son fichier html, contient le composant basket. Il n'y a rien de particulier à gérer au niveau de ce composant.
-- Le composant home est celui qui contiendra les fonctions des boutons rénitialiser et acheter.
-- Enfin, le composant pizzalist est celui où vous écrirez les fonctions pour selectionner le nombre de pizza du type que vous souhaitez.
+-  Le composant basket ne s'occupe que de la somme total à payer après avoir choisi vos pizzas.
+-  Le composant header, comme vous pouvez le voir dans son fichier html, contient le composant basket. Il n'y a rien de particulier à gérer au niveau de ce composant.
+-  Le composant home est celui qui contiendra les fonctions des boutons rénitialiser et acheter.
+-  Enfin, le composant pizzalist est celui où vous écrirez les fonctions pour selectionner le nombre de pizza du type que vous souhaitez.
 
 En premier lieu, vous devriez vous occuper du fichier app.module.ts. Quelques éléments manquent...
 
